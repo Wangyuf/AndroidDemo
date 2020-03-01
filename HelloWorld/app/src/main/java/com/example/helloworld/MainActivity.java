@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mbtnTextView;
     private Button mBtnButton;
+    private Button mBtnEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //跳转到button演示界面
                 Intent intent = new Intent(MainActivity.this, ButtonActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnEditText = findViewById(R.id.btn_edittext);
+        mBtnEditText.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                //跳转到editText演示界面
+                Intent intent = new Intent(MainActivity.this, EditTextActivity.class);
                 startActivity(intent);
             }
         });

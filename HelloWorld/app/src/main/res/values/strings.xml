@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">HelloWorld</string>
     <string name="tv_test1">tv_test1</string>
+    <string name="title_activity_edit_text">EditTextActivity</string>
+    <string name="action_settings">Settings</string>
+
 </resources>
