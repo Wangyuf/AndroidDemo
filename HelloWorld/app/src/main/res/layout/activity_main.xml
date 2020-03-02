@@ -9,28 +9,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btn_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button"
-        android:textAllCaps="false"
-        />
+        android:textAllCaps="false" />
 
     <Button
-    android:id="@+id/btn_edittext"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="EditText"
-    android:textAllCaps="false"
-    />
+        android:id="@+id/btn_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EditText"
+        android:textAllCaps="false" />
+
     <Button
         android:id="@+id/btn_radiobutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RadioButton"
-        android:textAllCaps="false"
-        />
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:textAllCaps="false" />
 </LinearLayout>
