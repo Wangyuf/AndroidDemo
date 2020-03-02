@@ -20,10 +20,17 @@
         />
 
     <Button
-        android:id="@+id/btn_edittext"
+    android:id="@+id/btn_edittext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="EditText"
+    android:textAllCaps="false"
+    />
+    <Button
+        android:id="@+id/btn_radiobutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="EditText"
+        android:text="RadioButton"
         android:textAllCaps="false"
         />
 </LinearLayout>
