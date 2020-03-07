@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.example.helloworld.gridview.GridViewActivity;
 import com.example.helloworld.listview.ListViewActivity;
+import com.example.helloworld.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnImgaeView;
     private Button mBtnListView;
     private Button mBtnGridView;
+    private Button mBtnRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImgaeView = findViewById(R.id.btn_imageview);
         mBtnListView = findViewById(R.id.btn_listview);
         mBtnGridView = findViewById(R.id.btn_gridview);
+        mBtnRecyclerView = findViewById(R.id.btn_recyclerview);
         setListeners();
     }
 
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnImgaeView.setOnClickListener(onclick);
         mBtnListView.setOnClickListener(onclick);
         mBtnGridView.setOnClickListener(onclick);
+        mBtnRecyclerView.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener {
@@ -76,6 +80,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_gridview:
                     intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+                case R.id.btn_recyclerview:
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
             }
             startActivity(intent);
