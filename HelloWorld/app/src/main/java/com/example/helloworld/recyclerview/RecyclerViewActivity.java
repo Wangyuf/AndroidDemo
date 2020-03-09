@@ -11,7 +11,7 @@ import com.example.helloworld.R;
 
 public class RecyclerViewActivity extends AppCompatActivity {
 
-    private Button mBtnLinear, mBtnHor, mBtnGrid;
+    private Button mBtnLinear, mBtnHor, mBtnGrid, mBtnPu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,14 @@ public class RecyclerViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RecyclerViewActivity.this, GridRecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtnPu = findViewById(R.id.btn_pu);
+        mBtnPu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclerViewActivity.this, PuRecyclerViewActivity.class);
                 startActivity(intent);
             }
         });
