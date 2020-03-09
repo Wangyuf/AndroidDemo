@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnListView;
     private Button mBtnGridView;
     private Button mBtnRecyclerView;
+    private Button mBtnWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnListView = findViewById(R.id.btn_listview);
         mBtnGridView = findViewById(R.id.btn_gridview);
         mBtnRecyclerView = findViewById(R.id.btn_recyclerview);
+        mBtnWebView = findViewById(R.id.btn_webview);
         setListeners();
     }
 
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnListView.setOnClickListener(onclick);
         mBtnGridView.setOnClickListener(onclick);
         mBtnRecyclerView.setOnClickListener(onclick);
+        mBtnWebView.setOnClickListener(onclick);
     }
 
     private class Onclick implements View.OnClickListener {
@@ -83,6 +86,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_recyclerview:
                     intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    break;
+                case R.id.btn_webview:
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
                     break;
             }
             startActivity(intent);
