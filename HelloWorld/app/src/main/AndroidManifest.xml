@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ProgressActivity"></activity>
+        <activity android:name=".CustomDialogActivity"></activity>
+        <activity android:name=".ProgressActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +37,7 @@
         <activity android:name=".ButtonActivity" />
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
-        <activity android:name=".UIActivity"></activity>
+        <activity android:name=".UIActivity" />
     </application>
 
 </manifest>
