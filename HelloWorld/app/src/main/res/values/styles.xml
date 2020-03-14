@@ -17,4 +17,8 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="MyProgressBar" >
+        <item name="android:indeterminateDrawable">@drawable/bg_progress</item>
+    </style>
+
 </resources>
