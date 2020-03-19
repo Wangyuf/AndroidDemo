@@ -113,5 +113,13 @@
             android:layout_height="wrap_content"
             android:text="PopupWindow"
             android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/btn_life_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LifeCycle"
+            android:textAllCaps="false" />
     </LinearLayout>
 </ScrollView>

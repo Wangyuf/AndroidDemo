@@ -11,6 +11,6 @@
         android:text="POP"
         android:textAllCaps="false"
         android:layout_gravity="center"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:layout_marginTop="10dp"/>
 </LinearLayout>
