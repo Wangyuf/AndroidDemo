@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBtnUI,mBtnEvent;
+    private Button mBtnUI,mBtnEvent,mBtnMy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         OnClick onClick = new OnClick();
         mBtnUI.setOnClickListener(onClick);
         mBtnEvent.setOnClickListener(onClick);
+        mBtnMy = findViewById(R.id.btn_my);
     }
 
     class OnClick implements View.OnClickListener{
