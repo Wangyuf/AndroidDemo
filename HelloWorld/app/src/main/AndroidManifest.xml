@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".EventActivity"></activity>
+        <activity android:name=".HandlerActivity"></activity>
+        <activity android:name=".EventActivity" />
         <activity android:name=".fragment.ContainerActivity" />
         <activity android:name=".LifeCycleActivity" />
         <activity android:name=".PopupWindowActivity" />

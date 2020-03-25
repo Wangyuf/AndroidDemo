@@ -17,4 +17,12 @@
         android:layout_height="wrap_content"
         android:text="my button"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="handle"
+        android:textAllCaps="false"
+        android:onClick="show"/>
 </LinearLayout>
