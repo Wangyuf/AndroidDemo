@@ -48,6 +48,21 @@ public class EventActivity extends AppCompatActivity implements View.OnClickList
                 return false;
             }
         });
+        mBtnMy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("OnClickListener", "----onclick---");
+            }
+        });
+
+        mBtnMy.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Log.d("onLongClick", "----onLongClick---");
+                // 如果返回false 会继续触发onClick如果返回true 则不会触发onClick
+                return false;
+            }
+        });
     }
 
     @Override
