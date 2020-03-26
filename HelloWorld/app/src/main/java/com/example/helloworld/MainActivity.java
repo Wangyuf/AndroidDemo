@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.helloworld.datastorage.DataStorageActivity;
+
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBtnUI,mBtnEvent,mBtnMy;
+    private Button mBtnUI, mBtnEvent, mBtnMy, mBtnData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,18 +23,24 @@ public class MainActivity extends AppCompatActivity {
         mBtnUI.setOnClickListener(onClick);
         mBtnEvent.setOnClickListener(onClick);
         mBtnMy = findViewById(R.id.btn_my);
+        mBtnData = findViewById(R.id.btn_data);
+        mBtnData.setOnClickListener(onClick);
     }
 
-    class OnClick implements View.OnClickListener{
+    class OnClick implements View.OnClickListener {
         Intent intent = null;
+
         @Override
         public void onClick(View v) {
-            switch (v.getId()){
+            switch (v.getId()) {
                 case R.id.btn_ui:
-                intent = new Intent(MainActivity.this, UIActivity.class);
-                break;
+                    intent = new Intent(MainActivity.this, UIActivity.class);
+                    break;
                 case R.id.btn_event:
                     intent = new Intent(MainActivity.this, EventActivity.class);
+                    break;
+                case R.id.btn_data:
+                    intent = new Intent(MainActivity.this, DataStorageActivity.class);
                     break;
             }
             startActivity(intent);
