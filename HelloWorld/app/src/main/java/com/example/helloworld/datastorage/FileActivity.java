@@ -70,7 +70,7 @@ public class FileActivity extends AppCompatActivity {
 
     public String read() {
         FileInputStream fileInputStream = null;
-
+        String resultString = null;
         try {
             fileInputStream = openFileInput(mFileName);
             byte[] buff = new byte[1024];
@@ -79,10 +79,18 @@ public class FileActivity extends AppCompatActivity {
             while ((len = fileInputStream.read(buff)) > 0) {
                 sb.append(new String(buff, 0, len));
             }
-            return sb.toString();
+            resultString = sb.toString();
         } catch (IOException e) {
             e.printStackTrace();
+        }finally {
+            if (fileInputStream!=null){
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-        return null;
+        return resultString;
     }
 }
