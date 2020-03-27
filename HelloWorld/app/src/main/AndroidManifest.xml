@@ -15,6 +15,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".datastorage.SharedPreferencesActivity"></activity>
         <activity android:name=".datastorage.DataStorageActivity" />
+        <activity android:name=".datastorage.FileActivity" />
         <activity android:name=".HandlerActivity" />
         <activity android:name=".EventActivity" />
         <activity android:name=".fragment.ContainerActivity" />
