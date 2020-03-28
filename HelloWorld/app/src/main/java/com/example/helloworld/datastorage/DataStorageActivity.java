@@ -11,15 +11,17 @@ import com.example.helloworld.R;
 
 public class DataStorageActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button mBtnSharedPreferences,mBtnFile;
+    private Button mBtnSharedPreferences,mBtnFile,mBtnFileMount;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_storage);
         mBtnSharedPreferences = findViewById(R.id.btn_sharedpreferences);
         mBtnFile = findViewById(R.id.btn_file);
+        mBtnFileMount = findViewById(R.id.btn_file_mount);
         mBtnSharedPreferences.setOnClickListener(DataStorageActivity.this);
         mBtnFile.setOnClickListener(DataStorageActivity.this);
+        mBtnFileMount.setOnClickListener(DataStorageActivity.this);
     }
 
     @Override
@@ -31,6 +33,8 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.btn_file:
                 intent = new Intent(DataStorageActivity.this, FileActivity.class);
+            case R.id.btn_file_mount:
+                intent = new Intent(DataStorageActivity.this, FileMountActivity.class);
                 break;
         }
         startActivity(intent);
